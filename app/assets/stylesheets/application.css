@@ -71,3 +71,28 @@
     
     background-color:#e9e9e9;
 }
+
+.footer-main {
+    background-color: #1B1B1B; /* fallback color, place your own */
+
+    /* Gradients for modern browsers, replace as you see fit */
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -ms-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#111111), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(top, #222222, #111111);
+    background-repeat: repeat-x;
+
+    /* IE8-9 gradient filter */
+    filter: progid:DXImageTransform.Microsoft.gradnnerient(startColorstr='#222222', endColorstr='#111111', GradientType=0);
+
+    /*height:22px;*/
+    font-size:13px;
+    color:#999999;
+}
+
+.footer-main b {
+    font-size:15px;
+    color:#ffffff;
+}

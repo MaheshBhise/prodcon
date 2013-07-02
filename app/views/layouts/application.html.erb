@@ -46,43 +46,71 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
-              <a class="brand" href="#">Prodcon</a>
+              <a class="brand" href="#">Logo</a>
+                              <div class="btn-group pull-right" style="margin-top:14px;">
+                  <button class="btn btn-custom-blue">Login</button>
+                  <button class="btn btn-custom-blue">Signup</button>
+                </div>
               <div class="container-fluid nav-collapse">
                 <ul class="nav">
-                  <li><%= link_to "Link1", "/path1"  %></li>
-                  <li><%= link_to "Link2", "/path2"  %></li>
-                  <li><%= link_to "Link3", "/path3"  %></li>
+                  <li><%= link_to "Why Product?", "javascript:void(0);",:id => "why_product_link" %></li>
+                  <li><%= link_to "About Us", "javascript:void(0);",:id => "about_us_link"  %></li>
+                  <li><%= link_to "FAQs", "javascript:void(0);",:id => "faqs_link"  %></li>
+                  <li><%= link_to "Contact Us", "javascript:void(0);",:id => "contact_us_link"  %></li>
                 </ul>
-               <!--ul class="nav pull-right">
-                  <li><a href="" class="btn btn-primary" style="padding:4px 12px;">Login</a></li>
-                  <li><a href="" class="btn btn-primary" style="padding:4px 12px;">Signup</a></li>
-                </ul-->
-               <div class="btn-group pull-right" style="margin-top:14px;">
-  <button class="btn btn-primary">Login</button>
-  <button class="btn btn-primary">Signup</button>
-</div>
+                <!--ul class="nav pull-right">
+                   <li><a href="" class="btn btn-primary" style="padding:4px 12px;">Login</a></li>
+                   <li><a href="" class="btn btn-primary" style="padding:4px 12px;">Signup</a></li>
+                 </ul-->
               </div><!--/.nav-collapse -->
-          
+
             </div>
           </div>
         </div>
       </div><!--/navigation -->
-      </div>
+    </div>
 
-      <div class="main-div">
+    <div class="main-div">
       <%= bootstrap_flash %>
       <%= yield %>
 
       <footer>
-        <p>&copy; Company 2013</p>
+          <div class="footer-main" style="width:100%;float:left;text-align:left;">
+            &copy;Copyright Prodcon 2013. All rights reserved.
+          </div>
       </footer>
 
-      </div> <!-- /main-div -->
+    </div> <!-- /main-div -->
 
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
 
+    <script>
+    $(document).ready(function (){
+        $("#why_product_link").click(function (){
+            //$(this).animate(function(){
+                $('html, body').animate({
+                    scrollTop: $("#why_product").offset().top
+                     }, 2000);
+            //});
+        });
+         $("#about_us_link").click(function (){
+            //$(this).animate(function(){
+                $('html, body').animate({
+                    scrollTop: $("#about_us").offset().top
+                     }, 2000);
+            //});
+        });
+          $("#contact_us_link").click(function (){
+            //$(this).animate(function(){
+                $('html, body').animate({
+                    scrollTop: $("#contact_us").offset().top
+                     }, 2000);
+            //});
+        });
+    });
+</script>
   </body>
 </html>
