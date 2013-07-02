@@ -1,0 +1,104 @@
+<div class="container">
+<div class="row" style="margin-left:auto;margin-right:auto;">
+  <div class="span6 offset3" >
+  <div class="main-nav">
+    <ul>
+      <li class="">
+        <a href="">
+          <strong>
+            Consumer
+          </strong>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <strong>
+            Producer
+          </strong>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+
+<div style="background:url('assets/main-area.png') repeat-x scroll 0 0 transparent;height:600px;background-color:#e9e9e9;">
+  <div class="container" style="padding-top:50px;">
+    <div class="row">
+      <div class="span8 offset2" style="text-align:center;">
+        <strong class="web-tagline">
+          The Website's tagline goes here.
+        </strong>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top:50px">
+      <div class="span10 offset1" style="text-align:center;">
+        <input type="text" /> near
+        <input type="text" />
+        <input type="button" value="Search" class="btn btn-primary"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style type="text/css">
+  /* Using only background gradients */
+.one {
+    width: 400px;
+    padding: 20px 25px;
+    margin: 40px auto;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(#000, transparent);
+    background-image:
+        -moz-linear-gradient(#000, transparent),
+        -moz-linear-gradient(#000, transparent)
+    ;
+    background-image:
+        -o-linear-gradient(#000, transparent),
+        -o-linear-gradient(#000, transparent)
+    ;
+    background-image:
+        linear-gradient(#000, transparent),
+        linear-gradient(#000, transparent)
+    ;
+    -moz-background-size:5px 100%;
+    background-size:5px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+}
+
+/* Using pseudo-elements and background gradients */
+
+.two {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    border: 5px solid transparent;
+    border-top-color: #000;
+    margin: 40px auto;
+}
+
+.two:before,
+.two:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    width: 5px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(#000, transparent);
+    background-image: -moz-linear-gradient(#000, transparent);
+    background-image: -o-linear-gradient(#000, transparent);
+    background-image: linear-gradient(#000, transparent);
+}
+
+.two:after {
+    left: auto;
+    right: -5px;
+}
+</style>

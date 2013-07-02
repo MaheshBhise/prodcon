@@ -1,0 +1,117 @@
+@import "twitter/bootstrap/bootstrap";
+
+body { 
+    background-color: #F0F0F0;
+    /*background: url("top-bg.png") repeat-x scroll 0 0 #EFF0EF;*/
+}
+
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+
+/* Global overrides */
+.navigation {
+  margin-top:2px;
+}
+
+.navbar-inner {
+  min-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #404040;
+  background-image: -moz-linear-gradient(top, #404040, #404040);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#404040), to(#404040));
+  background-image: -webkit-linear-gradient(top, #404040, #404040);
+  background-image: -o-linear-gradient(top, #404040, #404040);
+  background-image: linear-gradient(to bottom, #404040, #404040);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#404040', GradientType=0);
+  border-color: #55A79A;
+  border-style: none none solid;
+  border-width: 0 0 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 -4px 10px rgba(36, 36, 36, 0.6);
+  -moz-box-shadow: 0 -4px 10px rgba(36, 36, 36, 0.6);
+  box-shadow: 1px -4px 10px rgba(36, 36, 36, 0.6);
+  *zoom: 1;
+}
+
+.navbar .brand {
+  padding: 20px 20px;
+  color:#ffffff;
+}
+
+.navbar .nav {
+  padding:10px 20px;
+}
+
+.navbar .nav > li > a {
+  color:#c1c1c1;
+}
+
+.navbar .nav > li > a:hover {
+  color:#ffffff;
+}
+
+.navbar .nav > li > a:focus {
+  color:#ffffff;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}

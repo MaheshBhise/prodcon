@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ .main-nav .active-tab {
+  background:url("active-tab.png") no-repeat scroll 0 6px transparent;
+}
+
+ .main-nav ul {
+         list-style:none outside none;
+
+}
+
+.main-nav ul li {
+        float:left;
+
+        text-align:center;
+        line-height:3;
+        text-shadow: 1px 1px 1px #ffffff;
+        
+
+}
+
+.main-nav ul li a {
+    display: block;
+    height: 39px;
+    padding: 47px 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    width: 188px;
+        /*background: url("active-tab.png") no-repeat scroll 0 6px transparent;*/
+}
+
+.main-nav strong {
+    color: #55A79A;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.web-tagline{
+    color: #55A79A;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
