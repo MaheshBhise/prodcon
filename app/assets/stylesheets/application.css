@@ -56,3 +56,18 @@
     text-shadow: 1px 1px 1px #ffffff;
 }
 
+.products-head {
+    font-size:20px;
+    color:grey;
+}
+
+.about-head {
+    font-size:20px;
+    color:#fb6969;
+}
+
+.site-bg {
+    background:url('assets/main-area.png') repeat-x scroll 0 0 transparent;
+    
+    background-color:#e9e9e9;
+}
